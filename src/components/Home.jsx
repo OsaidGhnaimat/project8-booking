@@ -415,7 +415,7 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> 
 			<section className="gallery section">
 				<div className="container">
 					<div className="gallery_header d-sm-flex justify-content-between align-items-center">

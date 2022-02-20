@@ -164,6 +164,7 @@ const gallery = () => {
                             </div>
                         </a>
                     </figure>
+
                 </div>
             </div>
         </div>

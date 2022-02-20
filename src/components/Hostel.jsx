@@ -3,7 +3,7 @@ import "./assest/css/hostel.min.css";
 const hostel = () => {
 	return (
 		<main className="rooms section">
-			<header className="page" style="margin-top: 0px;">
+			<header className="page" style={{marginTop:'0px'}}>
 				<div className="container">
 					<ul className="breadcrumbs d-flex flex-wrap align-content-center">
 						<li className="list-item">

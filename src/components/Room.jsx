@@ -128,7 +128,7 @@ const room = () => {
 										className="swiper-button-prev d-inline-flex align-items-center justify-content-center"
 										href="#"
 									>
-										<i className="icon-arrow_left icon"></i>{" "}
+										<i className="icon-arrow_left icon"></i>
 									</a>
 									<a
 										className="swiper-button-next d-inline-flex align-items-center justify-content-center"
@@ -239,10 +239,10 @@ const room = () => {
 						<div className="room_main-info col-lg-8">
 							<div className="amenities d-flex flex-wrap align-items-center">
 								<span className="amenities_item d-inline-flex align-items-center">
-									<i className="icon-user icon"></i> 3 Sleeps{" "}
+									<i className="icon-user icon"></i> 3 Sleeps
 								</span>
 								<span className="amenities_item d-inline-flex align-items-center">
-									<i className="icon-twin_bed icon"></i> 1 full bed{" "}
+									<i className="icon-twin_bed icon"></i> 1 full bed
 								</span>
 								<span className="amenities_item d-inline-flex align-items-center">
 									<i className="icon-bunk_bed icon"></i> 2 twin bed
@@ -647,7 +647,7 @@ const room = () => {
 									</a>
 									<div className="main_amenities">
 										<span className="main_amenities-item d-inline-flex align-items-center">
-											<i className="icon-user icon"></i> 2 Sleeps{" "}
+											<i className="icon-user icon"></i> 2 Sleeps
 										</span>
 										<span className="main_amenities-item d-inline-flex align-items-center">
 											<i className="icon-bunk_bed icon"></i> 1 bunk bed
@@ -689,7 +689,7 @@ const room = () => {
 									</a>
 									<div className="main_amenities">
 										<span className="main_amenities-item d-inline-flex align-items-center">
-											<i className="icon-user icon"></i> 2 Sleeps{" "}
+											<i className="icon-user icon"></i> 2 Sleeps
 										</span>
 										<span className="main_amenities-item d-inline-flex align-items-center">
 											<i className="icon-twin_bed icon"></i> 2 twin beds
@@ -727,7 +727,7 @@ const room = () => {
 									</a>
 									<div className="main_amenities">
 										<span className="main_amenities-item d-inline-flex align-items-center">
-											<i className="icon-twin_bed icon"></i> 1 full bed{" "}
+											<i className="icon-twin_bed icon"></i> 1 full bed
 										</span>
 										<span className="main_amenities-item d-inline-flex align-items-center">
 											<i className="icon-bunk_bed icon"></i> 2 twin beds

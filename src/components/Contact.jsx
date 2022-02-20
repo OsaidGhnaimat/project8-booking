@@ -1,5 +1,3 @@
-import React from "react";
-import "./assest/css/contacts.min.css";
 import "./assest/css/about.min.css";
 
 const contact = () => {
@@ -62,7 +60,7 @@ const contact = () => {
 									<h4 className="main_title">Phone</h4>
 									<a className="link" href="tel:+1234567890">
 										(329) 580-7077
-									</a>{" "}
+									</a>
 									<a className="link" href="tel:+1234567890">
 										(650) 382-5020
 									</a>
@@ -104,7 +102,7 @@ const contact = () => {
 								</span>
 								<div className="main d-flex flex-column">
 									<h4 className="main_title">Location</h4>
-									<span>54826 Fadel Circles</span>{" "}
+									<span>54826 Fadel Circles</span>
 									<span>Darrylstad, AZ 90995</span>
 								</div>
 							</li>
@@ -138,7 +136,7 @@ const contact = () => {
 						<div className="accordion_component-item">
 							<div className="item-wrapper d-flex flex-column justify-content-between">
 								<h4 className="accordion_component-item_header d-flex justify-content-between align-items-center collapsed">
-									How do you choose the right hostel?{" "}
+									How do you choose the right hostel?
 									<span className="wrapper">
 										<i className="icon-chevron_down icon transform"></i>
 									</span>
@@ -155,7 +153,7 @@ const contact = () => {
 						<div className="accordion_component-item">
 							<div className="item-wrapper d-flex flex-column justify-content-between">
 								<h4 className="accordion_component-item_header d-flex justify-content-between align-items-center">
-									How many people are in a hostel room?{" "}
+									How many people are in a hostel room?
 									<span className="wrapper">
 										<i className="icon-chevron_down icon transform"></i>
 									</span>
@@ -172,7 +170,7 @@ const contact = () => {
 						<div className="accordion_component-item">
 							<div className="item-wrapper d-flex flex-column justify-content-between">
 								<h4 className="accordion_component-item_header d-flex justify-content-between align-items-center collapsed">
-									Are there private rooms in Hostels?{" "}
+									Are there private rooms in Hostels?
 									<span className="wrapper">
 										<i className="icon-chevron_down icon transform"></i>
 									</span>
@@ -189,7 +187,7 @@ const contact = () => {
 						<div className="accordion_component-item">
 							<div className="item-wrapper d-flex flex-column justify-content-between">
 								<h4 className="accordion_component-item_header d-flex justify-content-between align-items-center collapsed">
-									How do I keep my things safe in a hostel?{" "}
+									How do I keep my things safe in a hostel?
 									<span className="wrapper">
 										<i className="icon-chevron_down icon transform"></i>
 									</span>
@@ -206,7 +204,7 @@ const contact = () => {
 						<div className="accordion_component-item">
 							<div className="item-wrapper d-flex flex-column justify-content-between">
 								<h4 className="accordion_component-item_header d-flex justify-content-between align-items-center collapsed">
-									How do you stay safe in a hostel?{" "}
+									How do you stay safe in a hostel?
 									<span className="wrapper">
 										<i className="icon-chevron_down icon transform"></i>
 									</span>

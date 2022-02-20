@@ -2,34 +2,34 @@ import React from 'react'
 import "./assest/css/error.min.css"
 const error = () => {
   return (
-    <main className="error-page section">
-    <header className="page">
-   <div className="container">
-       <ul className="breadcrumbs d-flex flex-wrap align-content-center">
-           <li className="list-item">
-               <a className="link" href="index.html">Home</a>
+    <main class="error-page section">
+    <header class="page">
+   <div class="container">
+       <ul class="breadcrumbs d-flex flex-wrap align-content-center">
+           <li class="list-item">
+               <a class="link" href="index.html">Home</a>
            </li>
 
-           <li className="list-item">
-               <a className="link" href="#">Error page</a>
+           <li class="list-item">
+               <a class="link" href="#">Error page</a>
            </li>
        </ul>
-       <h1 className="page_title">Error page</h1>
+       <h1 class="page_title">Error page</h1>
    </div>
 </header>
-   <div className="container d-lg-flex">
-       <div className="error d-flex flex-column align-items-center align-items-lg-start">
-           <span className="error_code">404</span>
-           <h2 className="error_title">This is not the page you are looking for!</h2>
-           <p className="error_text">
+   <div class="container d-lg-flex">
+       <div class="error d-flex flex-column align-items-center align-items-lg-start">
+           <span class="error_code">404</span>
+           <h2 class="error_title">This is not the page you are looking for!</h2>
+           <p class="error_text">
                The page you are looking for doesnt exist. Looks like you are in the wrong place. Let us guide you back!
            </p>
-           <div className="error_btn wrapper">
-               <a className="btn theme-element theme-element--accent" href="index.html">Back to home</a>
+           <div class="error_btn wrapper">
+               <a class="btn theme-element theme-element--accent" href="index.html">Back to home</a>
            </div>
        </div>
-       <div className="media">
-           <div className="lostTraveller animatedElement" data-speed="3" data-direction="both">
+       <div class="media">
+           <div class="lostTraveller animatedElement" data-speed="3" data-direction="both">
                <svg width="100%" height="100%" viewBox="0 0 885 708" fill="none" xmlns="http://www.w3.org/2000/svg">
                    <path d="M148.524 707.818C148.524 707.818 135.774 676.441 174.024 652.909L148.524 707.818Z" fill="#f6dddd" />
                    <path d="M132.844 707.247C132.844 707.247 128.955 684.883 98.8516 685.075L132.844 707.247Z" fill="#f6dddd" />
