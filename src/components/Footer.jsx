@@ -100,7 +100,7 @@ const Footer = () => {
 								<p className="wrapper d-flex flex-column">
 									<a className="link" href="tel:+1234567890">
 										(329) 580-7077
-									</a>{" "}
+									</a>
 									<a className="link" href="tel:+1234567890">
 										(650) 382-5020
 									</a>
@@ -141,7 +141,7 @@ const Footer = () => {
 			<div className="footer_copyright">
 				<div className="container">
 					<p className="footer_copyright-text">
-						<span className="linebreak">Merkulove © Hosteller Template</span>{" "}
+						<span className="linebreak">Merkulove © Hosteller Template</span>
 						<span className="linebreak">
 							All rights reserved Copyrights 2021
 						</span>

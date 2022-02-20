@@ -7927,4 +7927,15 @@
 .pickmeup:not(.pmu-view-days) .pmu-day-of-week,.pickmeup:not(.pmu-view-days) .pmu-days,.pickmeup:not(.pmu-view-months) .pmu-months,.pickmeup:not(.pmu-view-years) .pmu-years {
     display: none
 }
-/*# sourceMappingURL=../sourcemaps/libs.css.map */
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:hover {background-color: coral;}
