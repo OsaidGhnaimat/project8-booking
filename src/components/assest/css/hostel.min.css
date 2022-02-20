@@ -974,9 +974,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"]
 	.rooms_list-item .item-wrapper .media img {
 		height: 100%;
 	}
-	.rooms_list-item .item-wrapper .main {
-		width: calc(100% - 200px);
-	}
+
 	.rooms_list-item .item-wrapper .main_info {
 		width: 280px;
 		margin-right: 20px;
@@ -1005,10 +1003,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"]
 	.rooms_list-item .item-wrapper .media {
 		width: 280px;
 	}
-	.rooms_list-item .item-wrapper .main {
-		width: calc(100% - 280px);
-		padding: 30px;
-	}
+
 	.rooms_list-item .item-wrapper .main_info {
 		width: 320px;
 		margin-right: 0;
@@ -1036,9 +1031,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"]
 	.rooms_list-item .item-wrapper .media {
 		width: 370px;
 	}
-	.rooms_list-item .item-wrapper .main {
-		width: calc(100% - 370px);
-	}
+
 	.rooms_list-item .item-wrapper .main_info {
 		width: 400px;
 	}
