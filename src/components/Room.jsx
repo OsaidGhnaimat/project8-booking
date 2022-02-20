@@ -33,27 +33,6 @@ export default function Room() {
         setnum(event.target.value);
       };
 	  function Submit() {
-        // localStorage.setItem("username", username);
-        // if (localStorage.getItem("accounts")) {
-        //   let temp = JSON.parse(localStorage.getItem("accounts"));
-        //   temp.push({
-        //     name:username
-        //   });
-        //   localStorage.setItem("accounts", JSON.stringify(temp));
-		  
-        // //   window.location.href = "http://localhost:3000/home";
-        // } else {
-        //   let temp = [
-        //     {
-		// 		name:username
-        //     },
-        //   ];
-        //   localStorage.setItem("accounts", JSON.stringify(temp));
-        // //   window.location.href = "http://localhost:3000/home";
-        // }
-
-
-		
 			
 			const formData = new FormData();
 			formData.append("username", username);
@@ -63,12 +42,7 @@ export default function Room() {
 			formData.append("date", date);
 			formData.append("time", time);
 			formData.append("num", num);
-			// formData.append("email", this.state.email);
-			// formData.append("phone", this.state.phone);
-			// formData.append("password", this.state.password);
-			// formData.append("passwordConform", this.state.passwordConform);
-			// formData.append("image", this.state.image, this.state.image.name);
-			// formData.append("image_name", this.state.image.name);
+
 			axios({
 			  method: "post",
 			  url: "http://localhost/project8-booking/php/booking.php",
@@ -76,66 +50,14 @@ export default function Room() {
 			  config: { headers: { "content-Type": "multipart/form-data" } },
 			})
 			  .then((res) => {
-				// if (res.data !== "The email you entered already exists") {
-				//   const obj = {
-				// 	id: res.data.id,
-					// name: res.data.name,
-				// 	email: res.data.email,
-				// 	phone: res.data.phone,
-				// 	password: res.data.password,
-				// 	image: res.data.image,
-				//   };
-				//   localStorage.setItem("users", JSON.stringify(obj));
-				//   if(localStorage.getItem("url"))
-				// {
-				//   localStorage.removeItem("url");
 				  window.location.href = "http://localhost:3000";
-				// }
-				// else {
-				//   window.location.assign("/");
-				// }
-				  
-				// } else {
-				//   this.setState({
-				// 	error: res.data,
-				//   });
-				// }
 			  })
 			  .catch((error) => {
 				console.log(error.response);
 			  });
 	  
-			// this.setState({
-			//   name: "",
-			//   email: "",
-			//   phone: "",
-			//   password: "",
-			//   passwordConform: "",
-			//   image: "",
-			// });
-	  
-			// e.preventDefault();
-		  
-
-
-
-
-
-
-
       };
-	// const url = "";
-	// const [data, setData] = useState('')({
-	// 	username:""
-		
-							
-	// })
-	// function handle(e) {
-	// 	const newdata = { ...data }
-	// 	newdata[e.target.id] = e.target.value
-	// 	setData(newdata)
-	// 	console.log(newdata);
-	// }
+
 	return (
 		<main>
 		<header className="page" style={{ marginTop: "0px" }}>
