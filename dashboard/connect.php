@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli('localhost', 'root','','db_project8');
+$conn = new mysqli('localhost', 'root','','project8_booking');
 
 // Check connection
 if ($conn->connect_error) {
