@@ -9,10 +9,11 @@ import Footer from "./components/Footer";
 ReactDOM.render(
 	<BrowserRouter>
 	<Header/>
-		<Routes>
+		{/* <Routes>
 			<Route path="/" element={<Home/>}/>
 			<Route path="/room" element={<Room/>}/>
-		</Routes>
+		</Routes> */}
+		<Room></Room>
 		<Footer/>
 	</BrowserRouter>,
 	document.getElementById("root")
