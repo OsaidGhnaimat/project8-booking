@@ -53,9 +53,9 @@ people and place of residence.
 								<a
 									className="link underlined underlined--white nav-item"
 									data-page="about"
-									href="hostel.html"
+									href="hotel.html"
 								>
-									Hostel
+									hotel
 								</a>
 								</Link>
 							</li>

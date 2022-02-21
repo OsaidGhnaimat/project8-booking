@@ -92,7 +92,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 <span aria-hidden="true">×</span> 
             </button> 
         </div> '; 
-        header("Location: /dashboradproject8/dashboard/main.php");
+        header("Location: http://localhost:3000/order");
     }
     
     if($showError) {

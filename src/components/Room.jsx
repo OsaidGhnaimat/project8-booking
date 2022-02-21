@@ -55,7 +55,7 @@ export default function Room() {
 			})
 			  .then((res) => {
 
-				  window.location.href = "http://localhost:3000";
+				  window.location.href = "http://localhost:3000/room";
 
 			  })
 			  .catch((error) => {
@@ -644,7 +644,7 @@ export default function Room() {
 									<input style={{border:'1px solid'}} value={phone} onChange={Phone} name="phone" type="number"/>
 									<br />
 								
-									<label ><b >Number :</b> </label> 
+									<label ><b >Number of children and adult:</b> </label> 
 									<input style={{border:'1px solid'}} value={num} onChange={Numberr}  name="num" type="number"/>
 									<br />
 									<label ><b >Age :</b> </label> 

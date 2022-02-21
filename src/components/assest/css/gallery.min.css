@@ -887,8 +887,9 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"]
 	}
 }
 .page {
-	padding: 60px 0;
-	background: #fdf7f7;
+	padding: 40px 0;
+    background: #fdf7f7;
+    margin-bottom: 60px;
 }
 .page .breadcrumbs {
 	margin-bottom: 10px;
