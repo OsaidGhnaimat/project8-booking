@@ -3,7 +3,7 @@ body {
   padding: 0;
   color: #fff;
   font: 600 16px/18px "Open Sans", sans-serif;
-  background-image: url(https://images.pexels.com/photos/6564830/pexels-photo-6564830.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-image: url(https://images.pexels.com/photos/1058959/pexels-photo-1058959.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-repeat: no-repeat;
 }
 * {
@@ -41,7 +41,7 @@ a {
   position: absolute;
   padding: 90px 70px 50px 70px;
   /* background: rgba(73, 94, 146, 0.902); */
-  background-color: rgba(122, 212, 167, 0.902);
+  background: rgb(246, 221, 221, 0.802);
 }
 .login-html .tab {
   font-size: 40px;
@@ -85,7 +85,7 @@ a {
   font-size: 12px;
 }
 .login-form .group .button {
-  background: #38855e;
+  background: #ed5a66;
   cursor: pointer;
 }
 .login-form .group label .icon {
