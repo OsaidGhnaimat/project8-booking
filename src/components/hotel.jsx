@@ -14,7 +14,6 @@ const hotel = ({ data }) => {
 								Home
 							</Link>
 						</li>
-						<li className="list-item">Student Hotels</li>
 					</ul>
 					<h1 className="page_title">Student Hotels</h1>
 				</div>
@@ -24,7 +23,7 @@ const hotel = ({ data }) => {
 					{data.map((list) => (
 						<OneHotel
 							key={list.id}
-							name={<Link to={`/hotel/${list.name}`}>{list.name}</Link>}
+							name={<Link to={`/hotels/${list.name}`}>{list.name}</Link>}
 							des={list.des}
 							img={list.img}
 							price={list.price}

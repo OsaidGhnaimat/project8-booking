@@ -64,18 +64,13 @@ const Header = () => {
 							</li>
 
 							<li className="header_nav-list_item">
-								<Link className="nav-item" to="hotel">
-									Hotel
+								<Link className="nav-item" to="hotels">
+								    Student Hotels
 								</Link>
 							</li>
 							<li className="list-item">
 								<Link className="nav-item" to="gallery">
 									Gallery
-								</Link>
-							</li>
-							<li className="header_nav-list_item">
-								<Link className="nav-item" to="order">
-									Order
 								</Link>
 							</li>
 							<li className="header_nav-list_item">
