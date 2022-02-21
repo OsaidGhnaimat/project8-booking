@@ -974,7 +974,9 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"]
 	.rooms_list-item .item-wrapper .media img {
 		height: 100%;
 	}
-
+	.rooms_list-item .item-wrapper .main {
+		width: calc(100% - 200px);
+	}
 	.rooms_list-item .item-wrapper .main_info {
 		width: 280px;
 		margin-right: 20px;
@@ -1003,7 +1005,10 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"]
 	.rooms_list-item .item-wrapper .media {
 		width: 280px;
 	}
-
+	.rooms_list-item .item-wrapper .main {
+		width: calc(100% - 280px);
+		padding: 30px;
+	}
 	.rooms_list-item .item-wrapper .main_info {
 		width: 320px;
 		margin-right: 0;
@@ -1297,6 +1302,10 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"]
 .alert_popup-close:hover {
 	color: #e92d3c;
 }
+.rooms_list-item {
+    margin-bottom: 30px !important;
+}
+
 @media screen and (min-width: 575.98px) {
 	.modal_popup--promo .modal_popup-close {
 		top: 30px;
@@ -1336,6 +1345,9 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"]
 	.modal_popup--promo .main_btn {
 		margin-top: 40px;
 	}
+	.rooms_list-item .item-wrapper .main {
+		width: calc(100% - 200px);
+	}
 }
 @media screen and (min-width: 991.98px) {
 	.modal_popup--promo {
@@ -1358,4 +1370,9 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"]
 	.modal_popup--promo .media img {
 		height: 100%;
 	}
+	.rooms_list-item .item-wrapper .main {
+		width: calc(100% - 280px);
+		padding: 30px;
+	}
 }
+

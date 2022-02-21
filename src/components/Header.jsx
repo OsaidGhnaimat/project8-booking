@@ -65,7 +65,7 @@ const Header = () => {
 
 							<li className="header_nav-list_item">
 								<Link className="nav-item" to="hotel">
-									hotel
+									Hotel
 								</Link>
 							</li>
 							<li className="list-item">
@@ -74,8 +74,22 @@ const Header = () => {
 								</Link>
 							</li>
 							<li className="header_nav-list_item">
-								<Link className="nav-link nav-link--contacts  d-inline-flex align-items-center" to="contact">
+								<Link className="nav-item" to="order">
+									Order
+								</Link>
+							</li>
+							<li className="header_nav-list_item">
+								<Link
+									className="nav-link nav-link--contacts  d-inline-flex align-items-center"
+									to="contact"
+								>
 									Contacts
+								</Link>
+							</li>
+
+							<li className="list-item">
+								<Link className="nav-item" to="gallery">
+									{sessionStorage.getItem("id") ? "Logout" : null}
 								</Link>
 							</li>
 						</ul>
