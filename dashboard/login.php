@@ -29,10 +29,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $users  = mysqli_fetch_all($result, MYSQLI_ASSOC);
             foreach ($users as $user) {
                 if ($email == $user["email"] && $password == $user["password"]) {
-                    $_SESSION["type"] = 0;
+                    // $_SESSION["type"] = 0;
                     $_SESSION["id"] = $user['id'];  
                     $_SESSION['name'] = $user['name'];
-                        header("Location: /dashboradproject8/dashboard/main.php");
+                        header("Location: http://localhost:3000/order");
                 } else {
                     $error = "your email or password is wrong";
                 }
