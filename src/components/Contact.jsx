@@ -126,7 +126,7 @@ const contact = () => {
 				<div className="container">
 					<div className="about_faq-header d-lg-flex justify-content-between align-items-center">
 						<h2 className="about_faq-header_title">
-							Frequently asked questions about hostel
+							Frequently asked questions about hotel
 						</h2>
 						<p className="about_faq-header_text">
 							Diam phasellus vestibulum lorem sed risus ultricies tristique
@@ -136,7 +136,7 @@ const contact = () => {
 						<div className="accordion_component-item">
 							<div className="item-wrapper d-flex flex-column justify-content-between">
 								<h4 className="accordion_component-item_header d-flex justify-content-between align-items-center collapsed">
-									How do you choose the right hostel?
+									How do you choose the right hotel?
 									<span className="wrapper">
 										<i className="icon-chevron_down icon transform"></i>
 									</span>
@@ -153,7 +153,7 @@ const contact = () => {
 						<div className="accordion_component-item">
 							<div className="item-wrapper d-flex flex-column justify-content-between">
 								<h4 className="accordion_component-item_header d-flex justify-content-between align-items-center">
-									How many people are in a hostel room?
+									How many people are in a hotel room?
 									<span className="wrapper">
 										<i className="icon-chevron_down icon transform"></i>
 									</span>
@@ -170,7 +170,7 @@ const contact = () => {
 						<div className="accordion_component-item">
 							<div className="item-wrapper d-flex flex-column justify-content-between">
 								<h4 className="accordion_component-item_header d-flex justify-content-between align-items-center collapsed">
-									Are there private rooms in Hostels?
+									Are there private rooms in hotels?
 									<span className="wrapper">
 										<i className="icon-chevron_down icon transform"></i>
 									</span>
@@ -187,7 +187,7 @@ const contact = () => {
 						<div className="accordion_component-item">
 							<div className="item-wrapper d-flex flex-column justify-content-between">
 								<h4 className="accordion_component-item_header d-flex justify-content-between align-items-center collapsed">
-									How do I keep my things safe in a hostel?
+									How do I keep my things safe in a hotel?
 									<span className="wrapper">
 										<i className="icon-chevron_down icon transform"></i>
 									</span>
@@ -204,7 +204,7 @@ const contact = () => {
 						<div className="accordion_component-item">
 							<div className="item-wrapper d-flex flex-column justify-content-between">
 								<h4 className="accordion_component-item_header d-flex justify-content-between align-items-center collapsed">
-									How do you stay safe in a hostel?
+									How do you stay safe in a hotel?
 									<span className="wrapper">
 										<i className="icon-chevron_down icon transform"></i>
 									</span>

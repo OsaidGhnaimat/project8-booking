@@ -7,10 +7,13 @@ export default function Room() {
     const [username,setname] = useState('');
     const [email,setemail] = useState('');
     const [phone,setphone] = useState('');
-    const [age,setage] = useState('');
+    // const [age,setage] = useState('');
     const [date,setdate] = useState('');
+	
     const [time,settime] = useState('');
     const [num,setnum] = useState('');
+	const [age,setage] = useState('');
+
 	function Name (event) {
         setname(event.target.value);
       };
@@ -20,9 +23,9 @@ export default function Room() {
 	function Phone (event) {
         setphone(event.target.value);
       };
-	function Age (event) {
-        setage(event.target.value);
-      };
+	// function Age (event) {
+    //     setage(event.target.value);
+    //   };
 	function Datee (event) {
         setdate(event.target.value);
       };
@@ -33,6 +36,7 @@ export default function Room() {
         setnum(event.target.value);
       };
 	  function Submit() {
+
 			
 			const formData = new FormData();
 			formData.append("username", username);
@@ -42,7 +46,7 @@ export default function Room() {
 			formData.append("date", date);
 			formData.append("time", time);
 			formData.append("num", num);
-
+		
 			axios({
 			  method: "post",
 			  url: "http://localhost/project8-booking/php/booking.php",
@@ -50,12 +54,15 @@ export default function Room() {
 			  config: { headers: { "content-Type": "multipart/form-data" } },
 			})
 			  .then((res) => {
-				  window.location.href = "http://localhost:3000";
+
+				  window.location.href = "http://localhost:3000/room";
+
 			  })
 			  .catch((error) => {
 				console.log(error.response);
 			  });
-	  
+
+
       };
 
 	return (
@@ -625,29 +632,31 @@ export default function Room() {
 								<div className="booking_group d-flex flex-column">
 									<p>BOOKING IN THE HOTALE :</p>
 									<br></br>
-									{/* <input type="radio" id="age1" name="age" value="30" />
-									<label htmlFor="age1">0 - 30</label>
-									<br />
-									<input type="radio" id="age2" name="age" value="60" />
-									<label htmlFor="age2">31 - 60</label>
-									<br />
-									<input type="radio" id="age3" name="age" value="100" />
-									<label htmlFor="age3">61 - 100</label> */}
+									
 									{/* <input onChange={(e) => handle(e)} id="name" value={data.name} placeholder="name" type="text"/> */}
 									<label ><b >Name :</b> </label> 
-									<input style={{border:'3px solid'}} value={username} onChange={Name} name="name" type="text"/>
+									<input style={{border:'1px solid'}} value={username} onChange={Name} name="name" type="text"/>
 									<br />
 									<label ><b >Email :</b> </label> 
-									<input style={{border:'3px solid'}} value={email} onChange={Email} name="email" type="email"/>
+									<input style={{border:'1px solid'}} value={email} onChange={Email} name="email" type="email"/>
 									<br />
 									<label ><b >Phone :</b> </label> 
-									<input style={{border:'3px solid'}} value={phone} onChange={Phone} name="phone" type="number"/>
+									<input style={{border:'1px solid'}} value={phone} onChange={Phone} name="phone" type="number"/>
+									<br />
+								
+									<label ><b >Number of children and adult:</b> </label> 
+									<input style={{border:'1px solid'}} value={num} onChange={Numberr}  name="num" type="number"/>
 									<br />
 									<label ><b >Age :</b> </label> 
-									<input style={{border:'3px solid'}} value={age} onChange={Age}  name="age" type="number"/>
-									<br />
-									<label ><b >Number :</b> </label> 
-									<input style={{border:'3px solid'}} value={num} onChange={Numberr}  name="num" type="number"/>
+									<div style={{marginTop:'5px'}}>
+									<input  type="radio" id="age1" name="age" checked={age === '0-10'} value="0-10" onChange={(e)=>{setage(e.target.value)}} />
+									<label style={{marginRight:'30px' , paddingRight:'10px'}} htmlFor="age1">0 - 10</label>
+									<input  type="radio" id="age2" name="age" checked={age === '10-20'} value="10-20" onChange={(e)=>{setage(e.target.value)}} />
+									<label style={{marginRight:'30px'}} htmlFor="age2">10 - 20</label>
+									<input type="radio" id="age3" name="age" checked={age === '20-30'} value="20-30" onChange={(e)=>{setage(e.target.value)}}/>
+									<label htmlFor="age3">20 - 30</label>
+									</div>
+									{/* <input style={{border:'3px solid'}} value={age} onChange={Age}  name="age" type="number"/> */}
 									<br />
 									<input  value={date} onChange={Datee} placeholder="date" name="date" type="date"/>
 									<br />

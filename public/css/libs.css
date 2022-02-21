@@ -1,7 +1,7 @@
 /**
- * Hosteller
- * Hosteller Template created for hostels, students hotels, guest houses, small hotel, resort, room reservation, travel and more
- * Exclusively on https://1.envato.market/hosteller-html
+ * hoteller
+ * hoteller Template created for hotels, students hotels, guest houses, small hotel, resort, room reservation, travel and more
+ * Exclusively on https://1.envato.market/hoteller-html
  *
  * @encoding        UTF-8
  * @version         1.0.0
@@ -7939,3 +7939,6 @@ table {
   }
   
   tr:hover {background-color: #ed5a66;}
+  main.rooms.section {
+    padding: 0px 0 90px !important;
+}

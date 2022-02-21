@@ -4,12 +4,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Room from './components/Room'
 import Contact from './components/Contact'
 import Hostel from './components/Hostel'
-import Gallery from './components/Gallery'
+
 import Order from './components/Order'
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from './components/Home'
-
+import Gallery from './components/Gallery'
  
 ReactDOM.render(
 	<BrowserRouter>
@@ -21,6 +21,7 @@ ReactDOM.render(
 			<Route path="/contact" element={<Contact/>}/>
 			<Route path="/hostel" element={<Hostel/>}/>
 			<Route path="/gallery" element={<Gallery/>}/>
+			
 		</Routes>
 		<Footer/>
 	</BrowserRouter>,

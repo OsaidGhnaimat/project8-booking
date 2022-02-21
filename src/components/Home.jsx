@@ -1,5 +1,6 @@
 import React from "react";
 import "./assest/css/index.min.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 	return (
@@ -32,7 +33,7 @@ const Home = () => {
 								<span className="icon">
 									<i className="fal fa-hot-tub"></i>
 								</span>
-								<p className="text">Comfortable hostel</p>
+								<p className="text">Comfortable hotel</p>
 							</li>
 							<li className="about_main-list_item d-flex flex-column flex-sm-row align-items-center">
 								<span className="icon">
@@ -45,18 +46,19 @@ const Home = () => {
 							<div className="wrapper">
 								<a
 									className="about_main-action_item btn theme-element theme-element--accent"
-									href="hostel.html"
+									href="hotel.html"
 								>
 									Book now
 								</a>
 							</div>
 							<div className="wrapper">
+								<Link to="/contact">
 								<a
 									className="about_main-action_item link link--arrow"
 									href="contact.html"
 								>
 									contact us <i className="icon-arrow_right icon"></i>
-								</a>
+								</a></Link>
 							</div>
 						</div>
 					</div>
@@ -79,13 +81,13 @@ const Home = () => {
 			<section className="rooms section--blockbg section--nopb">
 				<div className="container">
 					<div className="rooms_header d-sm-flex justify-content-between align-items-center">
-						<h2 className="rooms_header-title">Hostel</h2>
+						<h2 className="rooms_header-title">hotel</h2>
 						<div className="wrapper">
 							<a
 								className="btn theme-element theme-element--light"
 								href="rooms.html"
 							>
-								View all hostels
+								View all hotels
 							</a>
 						</div>
 					</div>
@@ -93,7 +95,7 @@ const Home = () => {
 						<li className="rooms_list-item col-md-6 col-xl-4">
 							<div className="item-wrapper d-md-flex flex-column">
 								<div className="media">
-									<img className="lazy" src="img/hostel/3.jpg" alt="media" />
+									<img className="lazy" src="img/hotel/3.jpg" alt="media" />
 									<span className="media_label media_label--pricing">
 										<span className="price h4">of 290JD</span> / 15 nights
 									</span>
@@ -123,7 +125,7 @@ const Home = () => {
 						<li className="rooms_list-item col-md-6 col-xl-4">
 							<div className="item-wrapper d-md-flex flex-column">
 								<div className="media">
-									<img className="lazy" src="img/hostel/2.jpg" alt="media" />
+									<img className="lazy" src="img/hotel/2.jpg" alt="media" />
 									<span className="media_label media_label--pricing">
 										<span className="price h4">of 240JD</span> / 15 nights
 									</span>
@@ -167,9 +169,9 @@ const Home = () => {
 								</div>
 								<a
 									className="btn theme-element theme-element--light"
-									href="hostel.html"
+									href="hotel.html"
 								>
-									Choose hostel
+									Choose hotel
 								</a>
 							</div>
 						</li>

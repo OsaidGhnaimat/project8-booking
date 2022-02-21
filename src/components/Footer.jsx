@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
@@ -27,15 +28,17 @@ const Footer = () => {
 							<span className="brand_name">Taksim</span>
 						</a>
 						<p className="footer_main-block_text">
-							Ut tellus elementum sagittis vitae et leo duis ut. Sit amet
-							consectetur adipiscing elit duis. Ultrices gravida dictum fusce ut
-							placer orci nulla pellentesque
+						Our site talks about trips. You can book your trip by choosing fully planned
+trips on our site that suits you based on the time duration, number of
+people and place of residence.
+
 						</p>
 					</div>
 					<div className="footer_main-block footer_main-block--nav col-sm-6 col-lg-auto">
 						<h4 className="footer_main-block_header">Quick links</h4>
 						<ul className="footer_main-block_nav d-flex flex-lg-column">
 							<li className="list-item">
+								<Link to ="/">
 								<a
 									className="link underlined underlined--white nav-item"
 									data-page="home"
@@ -43,25 +46,31 @@ const Footer = () => {
 								>
 									Home
 								</a>
+								</Link>
 							</li>
 							<li className="list-item">
+								<Link to ="/hostel">
 								<a
 									className="link underlined underlined--white nav-item"
 									data-page="about"
-									href="hostel.html"
+									href="hotel.html"
 								>
-									Hostel
+									hotel
 								</a>
+								</Link>
 							</li>
 							<li className="list-item">
+								<Link to="/gallery">
 								<a
 									className="link underlined underlined--white nav-item"
 									href="gallery.html"
 								>
 									Gallery
 								</a>
+								</Link>
 							</li>
 							<li className="list-item">
+								<Link to="/contact">
 								<a
 									className="link underlined underlined--white nav-item"
 									data-page="news"
@@ -69,6 +78,7 @@ const Footer = () => {
 								>
 									Contacts
 								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>
@@ -78,8 +88,8 @@ const Footer = () => {
 							<li className="list-item d-flex">
 								<i className="icon-location icon"></i>
 								<p className="wrapper">
-									<span className="linebreak">54826 Fadel Circles </span>
-									<span className="linebreak">Darrylstad, AZ 90995</span>
+									<span className="linebreak"> </span>
+									<span className="linebreak">Al Dakhiliya Street</span>
 								</p>
 							</li>
 							<li className="list-item d-flex">
@@ -99,10 +109,10 @@ const Footer = () => {
 								</span>
 								<p className="wrapper d-flex flex-column">
 									<a className="link" href="tel:+1234567890">
-										(329) 580-7077
+										0777777777
 									</a>
 									<a className="link" href="tel:+1234567890">
-										(650) 382-5020
+										0788888888
 									</a>
 								</p>
 							</li>
@@ -111,7 +121,7 @@ const Footer = () => {
 					<div className="footer_main-block footer_main-block--follow col-sm-5 col-lg-auto d-flex flex-column">
 						<h4 className="footer_main-block_header">Follow Us</h4>
 						<p className="footer_main-block_text">
-							Venenatis urna cursus eget nunc scelerisque
+							social media
 						</p>
 						<ul className="socials d-flex align-items-center">
 							<li className="list-item">
@@ -141,7 +151,7 @@ const Footer = () => {
 			<div className="footer_copyright">
 				<div className="container">
 					<p className="footer_copyright-text">
-						<span className="linebreak">Merkulove © Hosteller Template</span>
+						<span className="linebreak"></span>
 						<span className="linebreak">
 							All rights reserved Copyrights 2021
 						</span>
