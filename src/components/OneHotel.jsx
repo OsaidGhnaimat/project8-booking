@@ -20,9 +20,9 @@ const OneHotel = ({name,des,img,price}) => {
 							</div>
 							<div className="main d-md-flex justify-content-between">
 								<div className="main_info d-md-flex flex-column justify-content-between">
-									<a className="main_title h4" href="room.html">
+									<span className="main_title h4" >
 										{name}
-									</a>
+									</span>
 									<p className="main_description">
                                     {des}
 									</p>
@@ -32,9 +32,7 @@ const OneHotel = ({name,des,img,price}) => {
 										<span className="main_pricing-item">
 											<div className="h4">start from</div>
                                             <div className="h2">{price} JD</div>
-
 										</span>
-	
 									</div>
                                     <Link className="theme-element theme-element--accent btn" to="/">Book now</Link>
 								</div>
