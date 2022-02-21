@@ -1,5 +1,6 @@
 import React from "react";
 import "./assest/css/index.min.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 	return (
@@ -51,12 +52,13 @@ const Home = () => {
 								</a>
 							</div>
 							<div className="wrapper">
+								<Link to="/contact">
 								<a
 									className="about_main-action_item link link--arrow"
 									href="contact.html"
 								>
 									contact us <i className="icon-arrow_right icon"></i>
-								</a>
+								</a></Link>
 							</div>
 						</div>
 					</div>

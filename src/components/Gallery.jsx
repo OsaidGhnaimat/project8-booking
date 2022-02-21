@@ -1,41 +1,43 @@
 import React from 'react'
 import "./assest/css/gallery.min.css"
+import { Link } from "react-router-dom";
+
 const gallery = () => {
   return (
 <main>
-          <header class='page'>
-        <div class='container'>
-            <ul class="breadcrumbs d-flex flex-wrap align-content-center">
-                <li class='list-item'><a class='link' href='index-2.html'>Home</a></li>
-                <li class='list-item'><a class='link' href='#'>Photo Gallery of Our Hostel</a></li>
+          <header className='page'>
+        <div className='container'>
+            <ul className="breadcrumbs d-flex flex-wrap align-content-center">
+                <li className='list-item'><Link to="/"><a className='link' href='index-2.html'>Home</a></Link> </li>
+                <li className='list-item'><a className='link' href='#'>Photo Gallery of Our Hostel</a></li>
             </ul>
-            <h1 class='page_title'>Gallery</h1>
+            <h1 className='page_title'>Gallery</h1>
         </div>
     </header>
-        <div class="gallery section">
-            <div class='container'>
-                <ul class="gallery_filters d-flex flex-wrap align-items-baseline">
-                    <li class='list-item'><a data-target='all'
-                            class="gallery_filters-filter underlined underlined--accent active" href='#'>All</a></li>
-                    <li class='list-item'><a data-target='apartment'
-                            class="gallery_filters-filter underlined underlined--accent" href='#'>Apartment</a></li>
-                    <li class='list-item'><a data-target='standard'
-                            class="gallery_filters-filter underlined underlined--accent" href='#'>Standard Room</a></li>
-                    <li class='list-item'><a data-target='kitchen'
-                            class="gallery_filters-filter underlined underlined--accent" href='#'>Kitchen</a></li>
-                    <li class='list-item'><a data-target='living'
-                            class="gallery_filters-filter underlined underlined--accent" href='#'>Living Room</a></li>
+        <div className="gallery section">
+            <div className='container'>
+                <ul className="gallery_filters d-flex flex-wrap align-items-baseline">
+                    <li className='list-item'><a data-target='all'
+                            className="gallery_filters-filter underlined underlined--accent active" href='#'>All</a></li>
+                    <li className='list-item'><a data-target='apartment'
+                            className="gallery_filters-filter underlined underlined--accent" href='#'>Apartment</a></li>
+                    <li className='list-item'><a data-target='standard'
+                            className="gallery_filters-filter underlined underlined--accent" href='#'>Standard Room</a></li>
+                    {/* <li className='list-item'><a data-target='kitchen'
+                            className="gallery_filters-filter underlined underlined--accent" href='#'>Kitchen</a></li> */}
+                    <li className='list-item'><a data-target='living'
+                            className="gallery_filters-filter underlined underlined--accent" href='#'>Living Room</a></li>
                 </ul>
-                <div class="gallery_masonry row g-0">
-                    <figure class="gallery_masonry-item col-sm-6 col-lg-4" data-groups='["apartment"]'>
-                        <a class='aspect' href='img/gallery/full01.jpg' data-caption="Image caption" data-role='gallery-link'>
-                            <div class='aspect__inner'>
-                                <img class="gallery_masonry-item_img lazy" data-src='img/gallery/full01.jpg'
+                <div className="gallery_masonry row g-0">
+                    <figure className="gallery_masonry-item col-sm-6 col-lg-4" data-groups='["apartment"]'>
+                        <a className='aspect' href='img/gallery/full01.jpg' data-caption="Image caption" data-role='gallery-link'>
+                            <div className='aspect__inner'>
+                                <img className="gallery_masonry-item_img lazy" data-src='img/gallery/full01.jpg'
                                     src='img/gallery/full01.jpg' alt='media'/>
 
                             </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class='overlay_focus'>
+                            <div className="overlay d-flex align-items-center justify-content-center">
+                                <div className='overlay_focus'>
                                     <svg width='105' height='106' viewBox="0 0 105 106" fill='none'
                                         xmlns='http://www.w3.org/2000/svg'> <path
                                         d="M103.514 28.944C102.693 28.944 102.028 28.2795 102.028 27.4598V3.712H78.2507C77.43 3.712 76.7646 3.04749 76.7646 2.22777C76.7646 1.40805 77.43 0.74353 78.2507 0.74353H103.514C104.335 0.74353 105 1.40805 105 2.22777V27.4598C105 28.2795 104.335 28.944 103.514 28.944Z"
@@ -54,16 +56,16 @@ const gallery = () => {
                             </div>
                         </a>
                     </figure>
-                    <figure class="gallery_masonry-item col-sm-6 col-lg-4" data-groups='["standard", "apartment"]'>
-                        <a class="aspect aspect--sm" href='img/gallery/full02.jpg' data-caption="Image caption"
+                    {/* <figure className="gallery_masonry-item col-sm-6 col-lg-4" data-groups='["standard", "apartment"]'>
+                        <a className="aspect aspect--sm" href='img/gallery/full07.jpg' data-caption="Image caption"
                             data-role='gallery-link'>
-                            <div class='aspect__inner'>
-                                <img class="gallery_masonry-item_img lazy" data-src='img/gallery/full02.jpg'
-                                    src='img/gallery/full02.jp'g alt='media'/>
+                            <div className='aspect__inner'>
+                                <img className="gallery_masonry-item_img lazy" data-src='img/gallery/full07.jpg'
+                                    src='img/gallery/full07.jp'g alt='media'/>
 
                             </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class='overlay_focus'>
+                            <div className="overlay d-flex align-items-center justify-content-center">
+                                <div className='overlay_focus'>
                                     <svg width='105' height='106' viewBox="0 0 105 106" fill='none'
                                         xmlns='http://www.w3.org/2000/svg'> <path
                                         d="M103.514 28.944C102.693 28.944 102.028 28.2795 102.028 27.4598V3.712H78.2507C77.43 3.712 76.7646 3.04749 76.7646 2.22777C76.7646 1.40805 77.43 0.74353 78.2507 0.74353H103.514C104.335 0.74353 105 1.40805 105 2.22777V27.4598C105 28.2795 104.335 28.944 103.514 28.944Z"
@@ -81,16 +83,16 @@ const gallery = () => {
                                 </div>
                             </div>
                         </a>
-                    </figure>
-                    <figure class="gallery_masonry-item col-sm-6 col-lg-4" data-groups='["living"]'>
-                        <a class='aspect' href='img/gallery/full03.jpg' data-caption="Image caption" data-role='gallery-link'>
-                            <div class='aspect__inner'>
-                                <img class="gallery_masonry-item_img lazy" data-src='img/gallery/full03.jpg'
+                    </figure> */}
+                    <figure className="gallery_masonry-item col-sm-6 col-lg-4" data-groups='["living"]'>
+                        <a className='aspect' href='img/gallery/full03.jpg' data-caption="Image caption" data-role='gallery-link'>
+                            <div className='aspect__inner'>
+                                <img className="gallery_masonry-item_img lazy" data-src='img/gallery/full03.jpg'
                                     src='img/gallery/full03.jpg' alt='media'/>
 
                             </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class='overlay_focus'>
+                            <div className="overlay d-flex align-items-center justify-content-center">
+                                <div className='overlay_focus'>
                                     <svg width='105' height='106' viewBox="0 0 105 106" fill='none'
                                         xmlns='http://www.w3.org/2000/svg'> <path
                                         d="M103.514 28.944C102.693 28.944 102.028 28.2795 102.028 27.4598V3.712H78.2507C77.43 3.712 76.7646 3.04749 76.7646 2.22777C76.7646 1.40805 77.43 0.74353 78.2507 0.74353H103.514C104.335 0.74353 105 1.40805 105 2.22777V27.4598C105 28.2795 104.335 28.944 103.514 28.944Z"
@@ -109,15 +111,15 @@ const gallery = () => {
                             </div>
                         </a>
                     </figure>
-                    <figure class="gallery_masonry-item col-sm-6 col-lg-4" data-groups='["standard", "apartment"]'>
-                        <a class='aspect' href='img/gallery/full05.jpg' data-caption="Image caption" data-role='gallery-link'>
-                            <div class='aspect__inner'>
-                                <img class="gallery_masonry-item_img lazy" data-src='img/gallery/full05.jpg'
+                    <figure className="gallery_masonry-item col-sm-6 col-lg-4" data-groups='["standard", "apartment"]'>
+                        <a className='aspect' href='img/gallery/full05.jpg' data-caption="Image caption" data-role='gallery-link'>
+                            <div className='aspect__inner'>
+                                <img className="gallery_masonry-item_img lazy" data-src='img/gallery/full05.jpg'
                                     src='img/gallery/full05.jpg' alt='media'/>
 
                             </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class='overlay_focus'>
+                            <div className="overlay d-flex align-items-center justify-content-center">
+                                <div className='overlay_focus'>
                                     <svg width='105' height='106' viewBox="0 0 105 106" fill='none'
                                         xmlns='http://www.w3.org/2000/svg'> <path
                                         d="M103.514 28.944C102.693 28.944 102.028 28.2795 102.028 27.4598V3.712H78.2507C77.43 3.712 76.7646 3.04749 76.7646 2.22777C76.7646 1.40805 77.43 0.74353 78.2507 0.74353H103.514C104.335 0.74353 105 1.40805 105 2.22777V27.4598C105 28.2795 104.335 28.944 103.514 28.944Z"
@@ -136,16 +138,16 @@ const gallery = () => {
                             </div>
                         </a>
                     </figure>
-                    <figure class="gallery_masonry-item col-sm-6 col-lg-4" data-groups='["living"]'>
-                        <a class="aspect aspect--sm" href='img/gallery/full04.jpg' data-caption="Image caption"
+                    <figure className="gallery_masonry-item col-sm-6 col-lg-4" data-groups='["living"]'>
+                        <a className="aspect aspect--sm" href='img/gallery/full04.jpg' data-caption="Image caption"
                             data-role='gallery-link'>
-                            <div class='aspect__inner'>
-                                <img class="gallery_masonry-item_img lazy" data-src='img/gallery/full04.jpg'
+                            <div className='aspect__inner'>
+                                <img className="gallery_masonry-item_img lazy" data-src='img/gallery/full04.jpg'
                                     src='img/gallery/full04.jpg' alt='media'/>
 
                             </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class='overlay_focus'>
+                            <div className="overlay d-flex align-items-center justify-content-center">
+                                <div className='overlay_focus'>
                                     <svg width='105' height='106' viewBox="0 0 105 106" fill='none'
                                         xmlns='http://www.w3.org/2000/svg'> <path
                                         d="M103.514 28.944C102.693 28.944 102.028 28.2795 102.028 27.4598V3.712H78.2507C77.43 3.712 76.7646 3.04749 76.7646 2.22777C76.7646 1.40805 77.43 0.74353 78.2507 0.74353H103.514C104.335 0.74353 105 1.40805 105 2.22777V27.4598C105 28.2795 104.335 28.944 103.514 28.944Z"

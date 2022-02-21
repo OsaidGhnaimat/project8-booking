@@ -7,10 +7,13 @@ export default function Room() {
     const [username,setname] = useState('');
     const [email,setemail] = useState('');
     const [phone,setphone] = useState('');
-    const [age,setage] = useState('');
+    // const [age,setage] = useState('');
     const [date,setdate] = useState('');
+	
     const [time,settime] = useState('');
     const [num,setnum] = useState('');
+	const [age,setage] = useState('');
+
 	function Name (event) {
         setname(event.target.value);
       };
@@ -20,9 +23,9 @@ export default function Room() {
 	function Phone (event) {
         setphone(event.target.value);
       };
-	function Age (event) {
-        setage(event.target.value);
-      };
+	// function Age (event) {
+    //     setage(event.target.value);
+    //   };
 	function Datee (event) {
         setdate(event.target.value);
       };
@@ -33,27 +36,7 @@ export default function Room() {
         setnum(event.target.value);
       };
 	  function Submit() {
-        // localStorage.setItem("username", username);
-        // if (localStorage.getItem("accounts")) {
-        //   let temp = JSON.parse(localStorage.getItem("accounts"));
-        //   temp.push({
-        //     name:username
-        //   });
-        //   localStorage.setItem("accounts", JSON.stringify(temp));
-		  
-        // //   window.location.href = "http://localhost:3000/home";
-        // } else {
-        //   let temp = [
-        //     {
-		// 		name:username
-        //     },
-        //   ];
-        //   localStorage.setItem("accounts", JSON.stringify(temp));
-        // //   window.location.href = "http://localhost:3000/home";
-        // }
 
-
-		
 			
 			const formData = new FormData();
 			formData.append("username", username);
@@ -63,12 +46,7 @@ export default function Room() {
 			formData.append("date", date);
 			formData.append("time", time);
 			formData.append("num", num);
-			// formData.append("email", this.state.email);
-			// formData.append("phone", this.state.phone);
-			// formData.append("password", this.state.password);
-			// formData.append("passwordConform", this.state.passwordConform);
-			// formData.append("image", this.state.image, this.state.image.name);
-			// formData.append("image_name", this.state.image.name);
+		
 			axios({
 			  method: "post",
 			  url: "http://localhost/project8-booking/php/booking.php",
@@ -76,66 +54,17 @@ export default function Room() {
 			  config: { headers: { "content-Type": "multipart/form-data" } },
 			})
 			  .then((res) => {
-				// if (res.data !== "The email you entered already exists") {
-				//   const obj = {
-				// 	id: res.data.id,
-					// name: res.data.name,
-				// 	email: res.data.email,
-				// 	phone: res.data.phone,
-				// 	password: res.data.password,
-				// 	image: res.data.image,
-				//   };
-				//   localStorage.setItem("users", JSON.stringify(obj));
-				//   if(localStorage.getItem("url"))
-				// {
-				//   localStorage.removeItem("url");
+
 				  window.location.href = "http://localhost:3000";
-				// }
-				// else {
-				//   window.location.assign("/");
-				// }
-				  
-				// } else {
-				//   this.setState({
-				// 	error: res.data,
-				//   });
-				// }
+
 			  })
 			  .catch((error) => {
 				console.log(error.response);
 			  });
-	  
-			// this.setState({
-			//   name: "",
-			//   email: "",
-			//   phone: "",
-			//   password: "",
-			//   passwordConform: "",
-			//   image: "",
-			// });
-	  
-			// e.preventDefault();
-		  
-
-
-
-
-
 
 
       };
-	// const url = "";
-	// const [data, setData] = useState('')({
-	// 	username:""
-		
-							
-	// })
-	// function handle(e) {
-	// 	const newdata = { ...data }
-	// 	newdata[e.target.id] = e.target.value
-	// 	setData(newdata)
-	// 	console.log(newdata);
-	// }
+
 	return (
 		<main>
 		<header className="page" style={{ marginTop: "0px" }}>
@@ -703,29 +632,31 @@ export default function Room() {
 								<div className="booking_group d-flex flex-column">
 									<p>BOOKING IN THE HOTALE :</p>
 									<br></br>
-									{/* <input type="radio" id="age1" name="age" value="30" />
-									<label htmlFor="age1">0 - 30</label>
-									<br />
-									<input type="radio" id="age2" name="age" value="60" />
-									<label htmlFor="age2">31 - 60</label>
-									<br />
-									<input type="radio" id="age3" name="age" value="100" />
-									<label htmlFor="age3">61 - 100</label> */}
+									
 									{/* <input onChange={(e) => handle(e)} id="name" value={data.name} placeholder="name" type="text"/> */}
 									<label ><b >Name :</b> </label> 
-									<input style={{border:'3px solid'}} value={username} onChange={Name} name="name" type="text"/>
+									<input style={{border:'1px solid'}} value={username} onChange={Name} name="name" type="text"/>
 									<br />
 									<label ><b >Email :</b> </label> 
-									<input style={{border:'3px solid'}} value={email} onChange={Email} name="email" type="email"/>
+									<input style={{border:'1px solid'}} value={email} onChange={Email} name="email" type="email"/>
 									<br />
 									<label ><b >Phone :</b> </label> 
-									<input style={{border:'3px solid'}} value={phone} onChange={Phone} name="phone" type="number"/>
+									<input style={{border:'1px solid'}} value={phone} onChange={Phone} name="phone" type="number"/>
+									<br />
+								
+									<label ><b >Number :</b> </label> 
+									<input style={{border:'1px solid'}} value={num} onChange={Numberr}  name="num" type="number"/>
 									<br />
 									<label ><b >Age :</b> </label> 
-									<input style={{border:'3px solid'}} value={age} onChange={Age}  name="age" type="number"/>
-									<br />
-									<label ><b >Number :</b> </label> 
-									<input style={{border:'3px solid'}} value={num} onChange={Numberr}  name="num" type="number"/>
+									<div style={{marginTop:'5px'}}>
+									<input  type="radio" id="age1" name="age" checked={age === '0-10'} value="0-10" onChange={(e)=>{setage(e.target.value)}} />
+									<label style={{marginRight:'30px' , paddingRight:'10px'}} htmlFor="age1">0 - 10</label>
+									<input  type="radio" id="age2" name="age" checked={age === '10-20'} value="10-20" onChange={(e)=>{setage(e.target.value)}} />
+									<label style={{marginRight:'30px'}} htmlFor="age2">10 - 20</label>
+									<input type="radio" id="age3" name="age" checked={age === '20-30'} value="20-30" onChange={(e)=>{setage(e.target.value)}}/>
+									<label htmlFor="age3">20 - 30</label>
+									</div>
+									{/* <input style={{border:'3px solid'}} value={age} onChange={Age}  name="age" type="number"/> */}
 									<br />
 									<input  value={date} onChange={Datee} placeholder="date" name="date" type="date"/>
 									<br />
