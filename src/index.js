@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Room from './components/Room'
 import Contact from './components/Contact'
-import Hostel from './components/Hostel'
+import hotel from './components/hotel'
 import Gallery from './components/Gallery'
 import Order from './components/Order'
 import Header from "./components/Header";
@@ -19,7 +19,7 @@ ReactDOM.render(
 			<Route path="/" element={<Home/>}/>
 			<Route path="/room" element={<Room/>}/>
 			<Route path="/contact" element={<Contact/>}/>
-			<Route path="/hostel" element={<Hostel/>}/>
+			<Route path="/hotel" element={<hotel/>}/>
 			<Route path="/gallery" element={<Gallery/>}/>
 		</Routes>
 		<Footer/>

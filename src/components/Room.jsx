@@ -661,7 +661,7 @@ export default function Room() {
 							</div>
 						</section>
 						<section className="rules">
-							<h4 className="rules_header">Hostel rules</h4>
+							<h4 className="rules_header">hotel rules</h4>
 							<div className="rules_list d-md-flex flex-lg-wrap">
 								<div className="rules_list-block">
 									<p className="rules_list-block_item d-flex align-items-baseline">
@@ -674,7 +674,7 @@ export default function Room() {
 									</p>
 									<p className="rules_list-block_item d-flex align-items-baseline">
 										<i className="icon-check icon"></i> Is there a settlement
-										in hostel only after the presence of passport
+										in hotel only after the presence of passport
 									</p>
 								</div>
 								<div className="rules_list-block">

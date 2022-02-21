@@ -48,9 +48,9 @@ const Footer = () => {
 								<a
 									className="link underlined underlined--white nav-item"
 									data-page="about"
-									href="hostel.html"
+									href="hotel.html"
 								>
-									Hostel
+									hotel
 								</a>
 							</li>
 							<li className="list-item">
@@ -141,7 +141,7 @@ const Footer = () => {
 			<div className="footer_copyright">
 				<div className="container">
 					<p className="footer_copyright-text">
-						<span className="linebreak">Merkulove © Hosteller Template</span>
+						<span className="linebreak">Merkulove © hoteller Template</span>
 						<span className="linebreak">
 							All rights reserved Copyrights 2021
 						</span>

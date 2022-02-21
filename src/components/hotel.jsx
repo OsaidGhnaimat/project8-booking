@@ -1,6 +1,6 @@
 import React from "react";
-import "./assest/css/hostel.min.css";
-const hostel = () => {
+import "./assest/css/hotel.min.css";
+const hotel = () => {
 	return (
 		<main className="rooms section">
 			<header className="page" style={{marginTop:'0px'}}>
@@ -279,4 +279,4 @@ const hostel = () => {
 	);
 };
 
-export default hostel;
+export default hotel;

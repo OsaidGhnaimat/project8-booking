@@ -7,7 +7,7 @@ const gallery = () => {
         <div class='container'>
             <ul class="breadcrumbs d-flex flex-wrap align-content-center">
                 <li class='list-item'><a class='link' href='index-2.html'>Home</a></li>
-                <li class='list-item'><a class='link' href='#'>Photo Gallery of Our Hostel</a></li>
+                <li class='list-item'><a class='link' href='#'>Photo Gallery of Our hotel</a></li>
             </ul>
             <h1 class='page_title'>Gallery</h1>
         </div>
